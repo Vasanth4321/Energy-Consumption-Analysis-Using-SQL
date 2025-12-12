@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a comprehensive SQL database project that analyzes global patterns in energy production, consumption, emissions, GDP, and population trends across multiple countries from 1990 to 2020. The project transforms raw data into meaningful insights that support sustainable decision-making and environmental performance evaluation.
+This is a comprehensive SQL database project that analyzes global patterns in energy production, consumption, emissions, GDP, and population trends across multiple countries from 2020 to 2023. The project transforms raw data into meaningful insights that support sustainable decision-making and environmental performance evaluation.
 
 ## Objective
 
@@ -84,7 +84,7 @@ This SQL analysis reveals:
 
 ## Data Range
 
-- **Time Period**: 1990-2020
+- **Time Period**: 2020-23
 - **Geographic Coverage**: Multiple countries across all continents
 - **Metrics**: Emissions (CO2), Energy Production, Energy Consumption, GDP, Population
 
@@ -113,9 +113,6 @@ This project demonstrates how organized data and structured analysis can transfo
 - Balancing economic development with environmental sustainability
 - Supporting data-driven decision-making in environmental policy
 
-## Author
-
-**Vasanth.N.V.S**
 
 ## License
 
