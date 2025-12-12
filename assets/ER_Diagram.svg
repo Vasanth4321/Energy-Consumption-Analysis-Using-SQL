@@ -1,30 +1,87 @@
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg" style="background: white;">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
   <!-- Title -->
-  <text x="600" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Energy Consumption Analysis - ER Diagram</text>
+  <text x="700" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#000">Energy Consumption Analysis - Database ER Diagram</text>
 
-  <!-- Country Table -->
-  <rect x="50" y="80" width="180" height="120" fill="#E8F4F8" stroke="#0066CC" stroke-width="2"/>
-  <text x="140" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#0066CC">Country</text>
-  <line x1="50" y1="115" x2="230" y2="115" stroke="#0066CC" stroke-width="1"/>
-  <text x="60" y="135" font-size="12" fill="#333">CountryID (PK)</text>
-  <text x="60" y="155" font-size="12" fill="#333">CountryName</text>
-  <text x="60" y="175" font-size="12" fill="#333">Region</text>
+  <!-- COUNTRY TABLE (Center) -->
+  <rect x="550" y="350" width="300" height="150" fill="#B4D7F1" stroke="#2E75B6" stroke-width="2" rx="5"/>
+  <rect x="550" y="350" width="300" height="35" fill="#2E75B6" rx="5"/>
+  <text x="700" y="373" font-size="16" font-weight="bold" text-anchor="middle" fill="white">country</text>
+  <line x1="550" y1="385" x2="850" y2="385" stroke="#2E75B6" stroke-width="2"/>
+  <text x="560" y="405" font-size="13" fill="#000">🔑 CID VARCHAR(10)</text>
+  <text x="560" y="425" font-size="13" fill="#000">Country VARCHAR(100)</text>
+  <text x="560" y="445" font-size="13" fill="#000">Region VARCHAR(50)</text>
+  <text x="560" y="465" font-size="13" fill="#000">Indexes</text>
 
-  <!-- Emission Table -->
-  <rect x="350" y="80" width="180" height="140" fill="#F0E8F8" stroke="#6600CC" stroke-width="2"/>
-  <text x="440" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#6600CC">Emission</text>
-  <line x1="350" y1="115" x2="530" y2="115" stroke="#6600CC" stroke-width="1"/>
-  <text x="360" y="135" font-size="12" fill="#333">EmissionID (PK)</text>
-  <text x="360" y="155" font-size="12" fill="#333">CountryID (FK)</text>
-  <text x="360" y="175" font-size="12" fill="#333">Year</text>
-  <text x="360" y="195" font-size="12" fill="#333">CO2Emissions</text>
+  <!-- EMISSION_3 TABLE (Top Left) -->
+  <rect x="70" y="80" width="300" height="180" fill="#F4B084" stroke="#C65911" stroke-width="2" rx="5"/>
+  <rect x="70" y="80" width="300" height="35" fill="#C65911" rx="5"/>
+  <text x="220" y="103" font-size="16" font-weight="bold" text-anchor="middle" fill="white">emission_3</text>
+  <line x1="70" y1="115" x2="370" y2="115" stroke="#C65911" stroke-width="2"/>
+  <text x="80" y="135" font-size="13" fill="#000">country VARCHAR(100)</text>
+  <text x="80" y="155" font-size="13" fill="#000">energy_type VARCHAR(50)</text>
+  <text x="80" y="175" font-size="13" fill="#000">year INT</text>
+  <text x="80" y="195" font-size="13" fill="#000">emission INT</text>
+  <text x="80" y="215" font-size="13" fill="#000">per_capita_emission DOUBLE</text>
+  <text x="80" y="235" font-size="13" fill="#000">Indexes</text>
 
-  <!-- Population Table -->
-  <rect x="650" y="80" width="180" height="140" fill="#E8F8E8" stroke="#009900" stroke-width="2"/>
-  <text x="740" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#009900">Population</text>
-  <line x1="650" y1="115" x2="830" y2="115" stroke="#009900" stroke-width="1"/>
-  <text x="660" y="135" font-size="12" fill="#333">PopulationID (PK)</text>
-  <text x="660" y="155" font-size="12" fill="#333">CountryID (FK)</text>
-  <text x="660" y="175" font-size="12" fill="#333">Year</text>
-  <text x="660" y="195" font-size="12" fill="#333">Population</text>
+  <!-- CONSUMPTION TABLE (Bottom Left) -->
+  <rect x="70" y="550" width="300" height="150" fill="#C5E0B4" stroke="#70AD47" stroke-width="2" rx="5"/>
+  <rect x="70" y="550" width="300" height="35" fill="#70AD47" rx="5"/>
+  <text x="220" y="573" font-size="16" font-weight="bold" text-anchor="middle" fill="white">consumption</text>
+  <line x1="70" y1="585" x2="370" y2="585" stroke="#70AD47" stroke-width="2"/>
+  <text x="80" y="605" font-size="13" fill="#000">country VARCHAR(100)</text>
+  <text x="80" y="625" font-size="13" fill="#000">energy VARCHAR(50)</text>
+  <text x="80" y="645" font-size="13" fill="#000">year INT</text>
+  <text x="80" y="665" font-size="13" fill="#000">consumption INT</text>
+  <text x="80" y="685" font-size="13" fill="#000">Indexes</text>
+
+  <!-- PRODUCTION TABLE (Top Right) -->
+  <rect x="1030" y="80" width="300" height="180" fill="#E2EFDA" stroke="#70AD47" stroke-width="2" rx="5"/>
+  <rect x="1030" y="80" width="300" height="35" fill="#70AD47" rx="5"/>
+  <text x="1180" y="103" font-size="16" font-weight="bold" text-anchor="middle" fill="white">production</text>
+  <line x1="1030" y1="115" x2="1330" y2="115" stroke="#70AD47" stroke-width="2"/>
+  <text x="1040" y="135" font-size="13" fill="#000">country VARCHAR(100)</text>
+  <text x="1040" y="155" font-size="13" fill="#000">energy VARCHAR(50)</text>
+  <text x="1040" y="175" font-size="13" fill="#000">year INT</text>
+  <text x="1040" y="195" font-size="13" fill="#000">production INT</text>
+  <text x="1040" y="215" font-size="13" fill="#000">Indexes</text>
+
+  <!-- GDP_3 TABLE (Bottom Right) -->
+  <rect x="1030" y="550" width="300" height="150" fill="#FFF2CC" stroke="#BF9000" stroke-width="2" rx="5"/>
+  <rect x="1030" y="550" width="300" height="35" fill="#BF9000" rx="5"/>
+  <text x="1180" y="573" font-size="16" font-weight="bold" text-anchor="middle" fill="white">gdp_3</text>
+  <line x1="1030" y1="585" x2="1330" y2="585" stroke="#BF9000" stroke-width="2"/>
+  <text x="1040" y="605" font-size="13" fill="#000">Country VARCHAR(100)</text>
+  <text x="1040" y="625" font-size="13" fill="#000">year INT</text>
+  <text x="1040" y="645" font-size="13" fill="#000">Value DOUBLE</text>
+  <text x="1040" y="665" font-size="13" fill="#000">Indexes</text>
+
+  <!-- RELATIONSHIPS (Dashed Lines) -->
+  <!-- Country to emission_3 -->
+  <path d="M 550 425 Q 380 250 370 240" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="420" y="320" font-size="11" fill="#666" font-weight="bold">1:N</text>
+
+  <!-- Country to consumption -->
+  <path d="M 550 475 Q 380 600 370 625" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="420" y="560" font-size="11" fill="#666" font-weight="bold">1:N</text>
+
+  <!-- Country to production -->
+  <path d="M 850 425 Q 1020 250 1030 240" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="920" y="320" font-size="11" fill="#666" font-weight="bold">1:N</text>
+
+  <!-- Country to gdp_3 -->
+  <path d="M 850 475 Q 1020 600 1030 625" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="920" y="560" font-size="11" fill="#666" font-weight="bold">1:N</text>
+
+  <!-- LEGEND -->
+  <text x="70" y="810" font-size="12" font-weight="bold" fill="#000">Legend:</text>
+  <text x="70" y="830" font-size="11" fill="#333">🔑 Primary Key  | FK Foreign Key | 1:N One-to-Many Relationship | --- Foreign Key Reference</text>
+  <text x="70" y="850" font-size="11" fill="#333">All tables use country name as foreign key to maintain referential integrity across related data</text>
+  <text x="70" y="870" font-size="11" fill="#333">Data spans 1990-2020 enabling historical energy and economic trend analysis</text>
 </svg>
