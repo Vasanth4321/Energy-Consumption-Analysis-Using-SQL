@@ -29,6 +29,8 @@ The project is built on a normalized relational database with the following tabl
 
 ### ER Diagram
 
+![ER Diagram](./assets/ER_Diagram.png)
+
 The database implements a one-to-many relationship structure where the Country table acts as the master record, connecting to multiple rows in emission, population, production, consumption, and GDP tables through foreign key relationships.
 
 ## Key Analysis & Insights
@@ -113,9 +115,7 @@ This project demonstrates how organized data and structured analysis can transfo
 
 ## Author
 
-**Santhosh.M, Vinay.M, Vasanth.N.V.S**
-
-Data Science Project | Innomatics Research Labs
+**Vasanth.N.V.S**
 
 ## License
 
