@@ -1,0 +1,30 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="600" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Energy Consumption Analysis - ER Diagram</text>
+
+  <!-- Country Table -->
+  <rect x="50" y="80" width="180" height="120" fill="#E8F4F8" stroke="#0066CC" stroke-width="2"/>
+  <text x="140" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#0066CC">Country</text>
+  <line x1="50" y1="115" x2="230" y2="115" stroke="#0066CC" stroke-width="1"/>
+  <text x="60" y="135" font-size="12" fill="#333">CountryID (PK)</text>
+  <text x="60" y="155" font-size="12" fill="#333">CountryName</text>
+  <text x="60" y="175" font-size="12" fill="#333">Region</text>
+
+  <!-- Emission Table -->
+  <rect x="350" y="80" width="180" height="140" fill="#F0E8F8" stroke="#6600CC" stroke-width="2"/>
+  <text x="440" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#6600CC">Emission</text>
+  <line x1="350" y1="115" x2="530" y2="115" stroke="#6600CC" stroke-width="1"/>
+  <text x="360" y="135" font-size="12" fill="#333">EmissionID (PK)</text>
+  <text x="360" y="155" font-size="12" fill="#333">CountryID (FK)</text>
+  <text x="360" y="175" font-size="12" fill="#333">Year</text>
+  <text x="360" y="195" font-size="12" fill="#333">CO2Emissions</text>
+
+  <!-- Population Table -->
+  <rect x="650" y="80" width="180" height="140" fill="#E8F8E8" stroke="#009900" stroke-width="2"/>
+  <text x="740" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="#009900">Population</text>
+  <line x1="650" y1="115" x2="830" y2="115" stroke="#009900" stroke-width="1"/>
+  <text x="660" y="135" font-size="12" fill="#333">PopulationID (PK)</text>
+  <text x="660" y="155" font-size="12" fill="#333">CountryID (FK)</text>
+  <text x="660" y="175" font-size="12" fill="#333">Year</text>
+  <text x="660" y="195" font-size="12" fill="#333">Population</text>
+</svg>
