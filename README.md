@@ -113,15 +113,4 @@ This project demonstrates how organized data and structured analysis can transfo
 - Balancing economic development with environmental sustainability
 - Supporting data-driven decision-making in environmental policy
 
-
-## License
-
-This project is available for educational and research purposes.
-
-## Contact & Support
-
-For questions or suggestions about this project, feel free to open an issue or contact the project authors through GitHub.
-
----
-
-*Last Updated: December 2025*
+> ⭐ **If you find this project helpful, please consider starring this repository!** It helps others discover this project and motivates continued development.
