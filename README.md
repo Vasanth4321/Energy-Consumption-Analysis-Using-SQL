@@ -16,6 +16,29 @@ The main objective of this project is to understand global energy and environmen
 
 ## Project Structure
 
+The repository is organized to separate raw data, SQL logic, and documentation for easy navigation and reproducibility.
+
+Energy-Consumption-Analysis-Using-SQL/
+├── assets/
+│ ├── ER_Diagram.png
+|
+├── data/
+│ ├── country.csv
+│ ├── emission_3.csv
+│ ├── population.csv
+│ ├── production.csv
+│ ├── consumption.csv
+│ ├── gdp_3.csv
+| └── README.md # Explains how to import each CSV file into MySQL
+|
+├── sql_scripts/
+│ ├── database_schema.sql # creates ENERGYDB and all tables
+│ ├── analysis_queries.sql # all analysis SELECT queries
+│ ├── full_script.sql # schema + analysis in one script
+| └── README.md # Documents all SQL scripts
+|
+└── README.md # main project documentation
+
 ### Database Schema
 
 The project is built on a normalized relational database with the following tables:
@@ -29,7 +52,7 @@ The project is built on a normalized relational database with the following tabl
 
 ### ER Diagram
 
-![ER Diagram](./assets/ER_Diagram.png)
+![ER Diagram](./assets/ER_Diagram.jpg)
 
 The database implements a one-to-many relationship structure where the Country table acts as the master record, connecting to multiple rows in emission, population, production, consumption, and GDP tables through foreign key relationships.
 
@@ -78,9 +101,10 @@ This SQL analysis reveals:
 
 - `database_schema.sql` - Database creation and table definitions
 - `analysis_queries.sql` - Comprehensive analysis SQL queries
-- `ER_diagram.png` - Entity-relationship diagram
+- `full_script.sql` - Entire script (database_schema+analysis_queries)
+- `ER_diagram.jpg` - Entity-relationship diagram
 - `README.md` - Project documentation
-- `Presentation_Slides` - Project presentation materials
+- `.csv` - Datasets for Analysis
 
 ## Data Range
 
