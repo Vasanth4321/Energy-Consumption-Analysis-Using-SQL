@@ -18,6 +18,7 @@ The main objective of this project is to understand global energy and environmen
 
 The repository is organized to separate raw data, SQL logic, and documentation for easy navigation and reproducibility.
 
+```
 Energy-Consumption-Analysis-Using-SQL/
 ├── assets/
 │ ├── ER_Diagram.png
@@ -38,6 +39,7 @@ Energy-Consumption-Analysis-Using-SQL/
 | └── README.md # Documents all SQL scripts
 |
 └── README.md # main project documentation
+```
 
 ### Database Schema
 
